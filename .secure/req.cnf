@@ -1,0 +1,19 @@
+[req]
+distinguished_name = localhost_cert_req
+x509_extensions = v3_req
+prompt = no
+[localhost_cert_req]
+C = CA
+ST = Ontario
+L = Toronto
+O = Startelecom
+OU = Development 
+CN = www.localhost.com
+[v3_req]
+keyUsage = critical, digitalSignature, keyAgreement
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = www.localhost.com
+DNS.2 = localhost.com
+DNS.3 = localhost

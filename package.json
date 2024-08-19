@@ -1,0 +1,16 @@
+{
+  "name": "dejan-simple-web",
+  "version": "1.0.0",
+  "description": "Simple Web Server for Dejan",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Vladan Bjelovic",
+  "devDependencies": {
+    "express": "^4.18.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1"
+  }
+}
